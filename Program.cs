@@ -11,12 +11,33 @@ namespace Doga_2
     {
         public static void Jelszo()
         {
-            
+            string real_jelszo = "HamiltonTheGoat44";
+            string jelszo;
+            bool jelszoElfogadva = false;
 
+            while (!jelszoElfogadva)
+            {
+                Console.Write("Kérem, adja meg a jelszót: ");
+                jelszo = Console.ReadLine();
+
+                if (real_jelszo == jelszo)
+                {
+                    Console.WriteLine("Jelszó elfogadva!");
+                    jelszoElfogadva = true;
+                }
+                else
+                {
+                    Console.WriteLine("A jelszó nem felel meg. Kérjük, próbálja újra.");
+                }
+            }
         }
+
         static void Main(string[] args)
         {
             Jelszo();
         }
     }
+
 }
+   
+
